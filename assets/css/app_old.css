@@ -1,0 +1,290 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body { 
+  background: url('../img/furniture/background_grid_nologo.png') no-repeat center 44px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  line-height: 1.5em !important;
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
+}
+
+/* stop padding of navbar for small screens so navbar aligns with blue background image*/
+  .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+  padding: 0 !important;
+}
+
+h1{
+    font: 500 40px/1.3 'Nixie One', Georgia, serif;
+    color: #222;
+}
+
+h2{
+    font: 500 32px/1.3 'Nixie One', Georgia, serif;
+    color: #22347c;
+}
+
+h3{
+    font: 400 22px/1.3 'Nixie One', Georgia, serif;
+    color: #333;
+}
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+#banner { }
+
+/* Fixed Topbar Navigation */
+body.top-navbar { padding-top: 60px; }
+body.admin-bar .navbar-fixed-top { top: 28px; }
+
+.navbar-inner {
+  border-top: 0;
+  border-bottom: 0;
+  opacity: 1;
+/*
+  MOVED TO bootstrap.less and recompiled
+  
+  background-image: -webkit-linear-gradient(top,#080c1e,#22347c);
+  background-image: -o-linear-gradient(top,#080c1e,#22347c);
+  background-image: linear-gradient(to bottom,#080c1e,#22347c);
+  
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#080c1e', endColorstr='#22347c',GradientType=0 );
+   /* IE6-9 */
+}
+
+.navbar .nav > li > a {
+color: white;
+text-shadow: 0 1px 0 #08c;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+color: #FF7E00 !importaE5nt; /*amber*/
+background-color: #E5E5 !important;
+}
+
+.navbar-fixed-top .brand {
+    background: url('../img/furniture/biolayout_brand.png') no-repeat left center;
+    background-size: 93%;
+    text-indent: -99999px;
+    min-width: 320px;
+    } 
+
+/* network banner image */
+#network{
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  background: url('../img/furniture/network.png') no-repeat center top;
+  top: 44px;
+  z-index: -999;
+}
+
+/* change absolute position when WP admin bar is displayed */
+.admin-bar #network { top: 72px }
+
+#network img{
+    background: url('../img/furniture/biolayout_brand.png') no-repeat left center;
+    height: 100px;
+    width: auto;
+}
+
+/* carousel */
+.image_carousel {
+  padding: 10px 0 10px 0;
+  margin-top: 100px;
+  height: 100%;
+
+}
+.image_carousel li {
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 9px;
+  margin: 7px;
+  display: block;
+  float: left;
+}
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+.caroufredsel_wrapper{
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+#content { 
+  margin-bottom: 10px;
+}
+
+#vid1{
+  display: none;
+}
+
+.page-header {
+  border-bottom: none;
+  margin: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+#main {
+  background-color: #EFF0F5;
+}
+
+#main .image-container{
+    display: table-cell; 
+    text-align: center;
+}
+
+
+#main p, #main h1, #main h2, #main h3, #main h4, #main h5, #main h6, #main ul, #main ol, #main table{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+#sidebar  { 
+  text-align: left;
+}
+
+#sidebar blockquote {
+  padding-left: 0;
+  border: none;
+}
+
+#sidebar p {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.recent_with_excerpt {
+  background-color: #EFF0F5;
+  font-size: 14px;
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+
+.recent_with_excerpt ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.logo-container{
+    margin: 15px 0 15px 0;
+    line-height: 80px;
+}
+
+.sidebar-logo{
+  vertical-align: middle;
+  max-width: 200px;
+  height: auto;
+}
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry p.byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#footer_outer { 
+  border-top:5px solid #708399; 
+  width:100%; }
+
+#footer_inner { 
+  border-top:5px solid #7590C4; 
+  width:100%; }
+
+#content-info {
+  margin: 5px auto 0;
+ }
+
+#content-info p {
+  font-size:0.7em;
+  float:left; }
+
+#content-info ul { 
+  float:right; 
+  display:inline; }
+
+#content-info li { 
+  display:block; 
+  float:left; 
+  padding-left:15px; }
+
+#content-info li#roslin-logo a { 
+  display:block;
+  width:98px; 
+  height:35px; 
+  background:url('../img/logos/roslin-logo.jpg') no-repeat; }
+
+#content-info li#uoe-logo a { 
+  display:block;
+  width:34px; 
+  height:35px; 
+  background:url('../img/logos/uoe-logo.jpg') no-repeat; }
+
+#content-info li#embl-ebi-logo a { 
+  display:block;
+  width:110px; 
+  height:35px; 
+  background:url('../img/logos/embl-ebi-logo.jpg') no-repeat; }
+
+#content-info li#bbsrc-logo a { 
+  display:block;
+  width:138px; 
+  height:35px; 
+  background:url('../img/logos/bbsrc-logo.jpg') no-repeat; }
+
+#content-info li#roslin-logo a span, #content-info li#uoe-logo a span, #content-info li#embl-ebi-logo a span, #content-info li#bbsrc-logo a span { 
+  display:none; }
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 979px) {
+  /* Fix top padding when using the responsive grid with the fixed topbar */
+  body.top-navbar {
+    padding-top: 0;
+  }
+}
